@@ -517,6 +517,14 @@ body.nav-opened .site-wrapper {
     font-family: 'Open Sans', sans-serif;
 }
 
+.post-image-thumb {
+    size: 100%;
+    max-height: 360px;
+    max-width: 480px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 /* Navigation */
 body.nav-opened .nav-cover {
     position: fixed;
@@ -1464,6 +1472,19 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
+    .post-head.main-header {
+        height: 60vh;
+        max-height: 400px;
+        background-size: cover;
+    }
+
+
+    .post-image-thumb {
+        max-height: 200px;
+        max-width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
 
     blockquote {
         margin-left: 0;
@@ -1473,9 +1494,9 @@ body:not(.post-template) .post-title {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        height: auto;
         min-height: 240px;
         height: 60vh;
+        max-height: 400px;
         padding: 15% 0;
     }
 
