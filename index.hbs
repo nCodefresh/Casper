@@ -5,6 +5,7 @@
 <header class="main-header {{#if @blog.cover}}"
         style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
+
         {{#if @blog.logo}}
             <a class="blog-logo" href="{{@blog.url}}">
                 <img src="{{@blog.logo}}" alt="Blog Logo" /></a>
@@ -16,7 +17,24 @@
                 <span class="word">Menu</span>
             </a>
         {{/if}}
+
+        <ul class="navbar">
+            <li class="navbar-item">
+                <a href="http://codefresh.io/product">Product</a>
+            </li>
+            <li class="navbar-item new">
+                <a href="http://codefresh.io/labs">Labs</a>
+            </li>
+            <li class="navbar-item">
+                <a href="http://codefresh.io/contact">Contact us</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="http://blog.codefresh.io">Blog</a>
+            </li>
+        </ul>
     </nav>
+
+
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
