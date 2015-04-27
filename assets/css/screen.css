@@ -1919,6 +1919,22 @@ body:not(.post-template) .post-title {
     }
 }
 
+.btn-signup {
+  display: block;
+
+  width: 220px;
+
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+
+  border: 0;
+  background-color: #f1c40f;
+
+  font-size: 15px;
+  text-decoration: none;
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
