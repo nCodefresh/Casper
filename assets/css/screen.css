@@ -2094,6 +2094,90 @@ body:not(.post-template) .post-title {
     }
 }
 
+.btn-signup {
+  display: block;
+
+  width: 220px;
+
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+
+  border: 0;
+  background-color: #f1c40f;
+
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar-item {
+    display: inline-block;
+
+    min-height: 71px;
+}
+
+.navbar-item a {
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 10px;
+
+    padding: 13px 15px;
+
+    background-color: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+.navbar-item a:after {
+	content: "|";
+
+	float: right;
+
+	margin: 0 -4px 0 0;
+}
+
+.navbar-item a:hover {
+    background-color: transparent !important;
+    border-color: initial !important;
+    color: #fff !important;
+}
+
+.navbar-item.active a {
+    background-color: #f1c40f !important;
+}
+
+.navbar-item:last-child a {
+	margin-right: 0;
+}
+
+.navbar-item:last-child a:after {
+	content: "";
+	margin: 0;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: inline-block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
